@@ -195,6 +195,8 @@ class Scene_Map
         if !$game_system.menu_disabled && !$game_player.moving?
           $game_temp.menu_calling = true
           $game_temp.menu_beep = true
+          dayOfWeek = getDayOfTheWeek().to_s
+          $scene.spriteset.addUserSprite(LocationWindow.new($game_map.name+ "\n"+ pbGetTimeNow.strftime("%I:%M %p") + "\n" + dayOfWeek))
         end
       elsif Input.trigger?(Input::SPECIAL)
         $game_temp.ready_menu_calling = true if !$game_player.moving?
