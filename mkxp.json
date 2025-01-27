@@ -42,8 +42,8 @@
       "x": "JumpUp",
       "y": "JumpDown",
       "z": "Special",
-      "l": "AUX1",
-      "r": "AUX2"
+      "l": "(unused)",
+      "r": "(unused)"
     },
 
     // The name of this game's save folder. If undefined, the save folder's name
@@ -80,7 +80,7 @@
     // Index all accessible assets via their lower case path (emulates Windows
     // case insensitivity).
     //
-    "pathCache": false,
+    // "pathCache": true,
 
     //==========================================================================
     // Window size, scaling, rendering and frame rate.
